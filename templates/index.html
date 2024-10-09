@@ -1,0 +1,23 @@
+{{ template "header.html" . }}
+<main class="home-page-main">
+  <div class="container">
+    <div class="categories">
+      <ul>
+        <li class="categs active">
+          <a href="/trending">Trending</a>
+        </li>
+        <li class="categs">
+          <a href="/entertainment">Entertainment</a>
+        </li>
+        <li class="categs">
+          <a  href="/science&technolody">Science & Technology</a>
+        </li>
+        <li class="categs">
+          <a  href="/lifestyle">Lifestyle</a>
+        </li>
+      </ul>
+    </div>
+    <div class="pages">{{ template "content" . }}</div>
+  </div>
+</main>
+{{ template "footer.html" . }}
